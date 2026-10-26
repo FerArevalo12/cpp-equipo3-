@@ -54,6 +54,36 @@ int main() {
                 }
 
             }
+             double descuentoVenta = 0.0;
+
+            if (subtotalVenta >= 200.0) {
+                descuentoVenta = subtotalVenta * 0.05;
+            }
+
+            double totalVenta = subtotalVenta - descuentoVenta;
+
+            cout << "\n--- RESUMEN DE LA VENTA --- \n";
+            cout << "Subtotal; Q" << subtotalVenta << endl;
+            cout << "Descuento: Q" << descuentoVenta << endl;
+            cout << "Total a pagar: Q" << totalVenta << endl;
+            
+            totalVentasDia++;
+            totalMontoVendidoDia += totalVenta;
+            totalDescuentosDia += descuentoVenta;
+
+
+            if (totalVentasDia == 1) {
+                ventaMayor = totalVenta;
+                ventaMenor = totalVenta;
+            } else {
+                if (totalVenta > ventaMayor) {
+                    ventaMayor = totalVenta;
+
+                }
+                if (totalVenta < ventaMenor){
+                    ventaMenor = totalVenta;
+                }
+            }
 
         } else if (opcion == 3) {
             cout << "\nCierre de caja completado. Salida del sistema.\n";
