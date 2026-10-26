@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -22,9 +23,45 @@ int main() {
         }
 
         if (opcion == 1) {
-            cout << "\n[Opcion 1 seleccionada: Registro de venta en construccion]\n";
+            double subtotalVenta = 0.0;
+            double precio = -1.0;
+
+            cout << "\n--- REGISTRO DE VENTA ---\n";
+            cout << "Ingrese productos (Precio = 0 para terminar)\n";
+
+            while (true) {
+                cout << "\nPrecio del producto (Q): ";
+                cin >> precio;
+
+                while (cin.fail() || precio < 0) {
+                    cin.clear();
+                    cin.ignore(10000, '\n');
+                    cout << "Error: El precio debe ser mayor o igual a 0. Intente de nuevo: Q";
+                    cin >> precio;
+                }
+
+                if (precio == 0) {
+                    break;
+                }
+
+                int cantidad = 0;
+                cout << "Cantidad (1 a 100): ";
+                cin >> cantidad;
+
+                while (cin.fail() || cantidad < 1 || cantidad > 100) {
+                    cin.clear();
+                    cin.ignore(10000, '\n');
+                    cout << "Error: La cantidad debe estar entre 1 y 100. Intente de nuevo: ";
+                    cin >> cantidad;
+                }
+
+                subtotalVenta += (precio * cantidad);
+            }
+
+            cout << "\nSubtotal acumulado de la venta: Q" << subtotalVenta << "\n";
+
         } else if (opcion == 2) {
-            cout << "\n[Opcion 2 seleccionada: Resumen del dia en construccion]\n";
+            cout << "\n[Resumen diario en construccion]\n";
         } else if (opcion == 3) {
             cout << "\nCierre de caja completado. Salida del sistema.\n";
         } else {
