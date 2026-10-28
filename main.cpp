@@ -12,7 +12,7 @@ int main() {
     double totalDescuentosDia = 0.0;
     double ventaMayor = 0.0;
     double ventaMenor = 0.0;
-
+double uno;
     cout << fixed << setprecision(2);
 
     do {
