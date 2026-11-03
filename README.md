@@ -39,16 +39,17 @@ Tener instalado un compilador de C++ (como MinGW en Windows) y VS Code.
 ## Capturas de Pantalla de Ejecución
 
 ### 1. Menú Principal y Registro de Venta Normal
-![Menú Principal y Registro](img/registroventa.png)
+![Menú Principal y Registro](img/99.99.png.png)
 
-### 2. Validación de Datos Inválidos
-![Validación de Datos Inválidos](img/datoinvalido.png)
+### 2. Menú Principal y Registro
+![Menú Principal y Registro](img/100.png)
+
+### 3. Menú Principal y Registro
+![Menú Principal y Registro](img/500.png)
 
 ### 3. Resumen Parcial del Día y Cierre
-![Resumen del Día](img/resumendeldia.png)
+![Resumen del Día](img/noregistrado.png)
 
 ## Video de demostración
-
-Puedes ver la explicación y demostración del funcionamiento del código en el siguiente enlace:
 
 [Ver video de demostración en Google Drive](https://drive.google.com/file/d/1iexPyk81ZgXPkZm7pj1eUQodSCrK5QvL/view?usp=drive_link)
