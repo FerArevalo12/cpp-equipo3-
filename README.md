@@ -46,3 +46,9 @@ Tener instalado un compilador de C++ (como MinGW en Windows) y VS Code.
 
 ### 3. Resumen Parcial del Día y Cierre
 ![Resumen del Día](img/resumendeldia.png)
+
+## Video de demostración
+
+Puedes ver la explicación y demostración del funcionamiento del código en el siguiente enlace:
+
+[Ver video de demostración en Google Drive](https://drive.google.com/file/d/1iexPyk81ZgXPkZm7pj1eUQodSCrK5QvL/view?usp=drive_link)
