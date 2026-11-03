@@ -17,3 +17,11 @@ bin-release/
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
 *.vs
+# Archivos generados por compilación de C++
+*.exe
+*.obj
+*.ilk
+*.pdb
+
+# Carpetas y archivos de Visual Studio
+.vs/
